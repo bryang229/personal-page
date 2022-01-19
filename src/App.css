@@ -36,7 +36,17 @@ a{
 }
 
 #projects{
-  display:inline-block;
+  display:flex;
+  flex-flow: row wrap;
+}
+
+#bryanImg {
+  border-radius: 50%;
+}
+
+#bryanDiv {
+  margin-left:20%;
+  width:60%;
 }
 
 #hardware{
