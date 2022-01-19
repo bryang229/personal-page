@@ -13,11 +13,6 @@ a{
   color:#051923;
 }
 
-#darkMode{
-
-  margin: 5px 0px 0px 0px;
-  border: 1px solid black;
-}
 
 #logo{
   margin-left:1.5%;
@@ -27,6 +22,8 @@ a{
   margin-right:2.5%;
 
 }
+
+
 
 .projects{
   display: table;
@@ -38,6 +35,7 @@ a{
 #projects{
   display:flex;
   flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 #bryanImg {
@@ -56,4 +54,8 @@ a{
 #hardwareDesc{
   margin-left:25px;
   width:300px;
+}
+
+#bryanDiv {
+  margin-bottom:10%;
 }
