@@ -86,7 +86,7 @@ const IntroToBryan = (props: BryanInfo) => {
             <img src={props.imgOfBryan} width="70px" id="bryanImg" alt="Bryan Bonilla Garay" />
             <p>{props.bryanDesc}</p>
             <a href={props.githubLink}><img id={"githubLogo"} src={props.githubLogo} /></a>
-            <a href={props.linkedInLogo}><img width={"70px"} src={props.linkedInLogo} /></a>
+            <a href={props.linkedInLink}><img width={"70px"} src={props.linkedInLogo} /></a>
         </div>
     );
 }
