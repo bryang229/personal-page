@@ -96,7 +96,7 @@ function App() {
             <body className={"darkMode"}>
                 <IntroToBryan githubLogo={githubLogo} githubLink={"https://github.com/bryang229"} imgOfBryan={bryan} bryanDesc={bryanDesc}
                     linkedInLogo={linkedInLogo} linkedInLink={"https://linkedin.com/in/bryang229"} resumeImg={resume} />
-                <h2>Programs</h2>
+                <h2>Programs:</h2>
                 <div id="programs">
                     <ProjectElement title="Hardware Product Sprint" id="hps" preview={"https://github.com/bryang229/HPS-Work/blob/main/Clock%20CAD%20&%20Code/Clock/Clock%20raytracing.jpg?raw=true"} link="https://www.clock.bryang229.com/" 
                     desc={hpsDesc} scale={[300, 400]} />

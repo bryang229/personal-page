@@ -23,7 +23,9 @@ a{
 
 }
 
-
+nav img:hover, a:hover{
+  opacity: 0.5;
+}
 
 .projects{
   display: table;
@@ -35,7 +37,7 @@ a{
   display:flex;
   flex-direction: row;
   justify-content: center;
-  
+
 }
 
 #projects{
