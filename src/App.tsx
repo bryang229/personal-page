@@ -40,12 +40,80 @@ const changeDisplayMode = (mode: boolean) => {
     }
 }
 
+
+
 const Navbar = () => {
+    function myFunction(e : any) {
+        e.preventDefault();
+        let div = document.getElementById(`sideMenuItems`);
+        div?.classList.toggle("hide");
+        document.querySelector(".sideMenu")?.classList.toggle("change");
+         
+      }
+    
+       
+    
     let darkMode = false;
     return (
         <nav id={"navbar"}>
+
+<div className="sideMenu" onClick={myFunction}>
+  <div className="bar1"></div>
+  <div className="bar2"></div>
+  <div className="bar3"></div>
+  <div className = "hide" id ="sideMenuItems">
+  <a href = "/">
+            <img id={"logo"} alt={"logo"} width={70} height={70} src={logo}/></a>
+            <hr/>
+            <a target="_blank" href = "https://bryang229.github.io/8x8Demo/">
+                <div className = "navItem">
+                    Clock Demo
+                </div>
+            </a>
+            <hr/>
+            <a target="_blank" href = "https://demo.bryang229.com">
+                <div className = "navItem">
+                    Radar Demo
+                </div>
+            </a>
+            <hr/>
+            <a target="_blank" href = "https://math.bryang229.com">
+                <div className = "navItem">
+                    Math Demo
+                </div>
+            </a>
+            <hr/>
+            <a target="_blank" href = "https://music.bryang229.com/">
+                <div className = "navItem">
+                    Music Demo
+                </div>
+            </a>
+        </div>
+</div>
+        <div id ="horiMenu">
             <a href = "/">
             <img id={"logo"} alt={"logo"} width={70} height={70} src={logo}/></a>
+            <a target="_blank" href = "https://bryang229.github.io/8x8Demo/">
+                <div className = "navItem">
+                    Clock Demo
+                </div>
+            </a>
+            <a target="_blank" href = "https://demo.bryang229.com">
+                <div className = "navItem">
+                    Radar Demo
+                </div>
+            </a>
+            <a target="_blank" href = "https://math.bryang229.com">
+                <div className = "navItem">
+                    Math Demo
+                </div>
+            </a>
+            <a target="_blank" href = "https://music.bryang229.com/">
+                <div className = "navItem">
+                    Music Demo
+                </div>
+            </a>
+            </div>
             <div onClick={() => {
                 darkMode = !darkMode;
                 // @ts-ignore
@@ -57,6 +125,7 @@ const Navbar = () => {
                 <img width={"70px"} id={"darkMode"} src={light} />
 
             </div>
+            
         </nav>
     );
 };
@@ -93,12 +162,12 @@ function App() {
     return (
         <div className="App darkMode">
             <Navbar />
-            <body className={"darkMode"}>
+            <main className={"darkMode"}>
                 <IntroToBryan githubLogo={githubLogo} githubLink={"https://github.com/bryang229"} imgOfBryan={bryan} bryanDesc={bryanDesc}
                     linkedInLogo={linkedInLogo} linkedInLink={"https://linkedin.com/in/bryang229"} resumeImg={resume} />
                 <h2>Programs:</h2>
                 <div id="programs">
-                    <ProjectElement title="Hardware Product Sprint" id="hps" preview={"https://github.com/bryang229/HPS-Work/blob/main/Clock%20CAD%20&%20Code/Clock/Clock%20raytracing.jpg?raw=true"} link="https://www.clock.bryang229.com/" 
+                    <ProjectElement title="Hardware Product Sprint" id="hps" preview={"https://github.com/bryang229/HPS-Work/blob/main/Clock%20CAD%20&%20Code/Clock/Clock%20raytracing.jpg?raw=true"} link="https://bryang229.github.io/8x8Demo/" 
                     desc={hpsDesc} scale={[300, 400]} />
                 </div>
 
@@ -108,7 +177,7 @@ function App() {
                     <ProjectElement title="React Math App" id={"mathwebapp"} preview={mathWebapp} link={"https://math.bryang229.com"} desc={mathDesc} scale={[300, 350]} />
                     <ProjectElement title="Music-next" id="music-next" preview={musicNext} link="https://music.bryang229.com" desc={musicDesc} scale={[300, 350]} />
                 </div>
-            </body>
+            </main>
             <br/>
             <footer>
                 <a target="_blank" href="https://icons8.com/icon/zIyGTkovhPNm/up-arrow">Up Arrow & Down Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
