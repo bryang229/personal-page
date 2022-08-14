@@ -1,5 +1,6 @@
 body{
   font-family: 'Noto Sans', sans-serif;
+  background-color:#F4F3EE;
 }
 
 .App {
@@ -39,6 +40,7 @@ nav img:hover, a:hover{
   display: table;
   margin: 70px 30px 0px 70px;
   border: 1px black solid;
+  border-radius: 5px;
   width: 350px;
 }
 #programs{
@@ -97,6 +99,16 @@ nav img:hover, a:hover{
   transition: 0.4s;
 }
 
+.dropDownTop{
+  background-color: #C83E4D;
+  padding: 10px;
+}
+
+.dropDownBottom{
+  background-color:#BCB8B1;
+  margin:0px;
+}
+
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
@@ -118,6 +130,12 @@ nav img:hover, a:hover{
 
 .hide{
   display: none;
+}
+
+#langs, #tech{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 1000px){

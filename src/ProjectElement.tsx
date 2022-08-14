@@ -42,36 +42,40 @@ class ProjectElement extends React.Component<any, any>{
     render() {
         if (this.state.showOverview) {
             return (
-                <div className={"projects darkMode"} id={this.state.id}>
-                    <div onClick={this.changeOverviewState}>
+                <div className={"projects darkMode dropDownBottom"} id={this.state.id}>
+                    <div className="dropDownTop" onClick={this.changeOverviewState}>
                         {this.state.title}
                         <img height="15px" src={expand} />
+                        <hr />
                     </div>
-                    <hr />
-                    <img src={this.state.preview} height={this.state.scale[0] / 2} width={this.state.scale[1] / 2}></img>
-                    <div id={this.state.id + "Overview"}>
-                        <p>{this.state.overview}</p>
+                    <div>
+                        <img src={this.state.preview} height={this.state.scale[0] / 2} width={this.state.scale[1] / 2}></img>
+                        <div id={this.state.id + "Overview"}>
+                            <p>{this.state.overview}</p>
+                        </div>
+                        <br />
+                        <div> <a href={this.state.link}>Try the demo here!</a> </div>
                     </div>
-                    <br />
-                    <div> <a href={this.state.link}>Try the demo here!</a> </div>
-
                 </div>);
         }
         return (
-            <div className={"projects darkMode"} id={this.state.id}>
-                <div onClick={this.changeOverviewState}>
-                    {this.state.title}
-                    <img height="15px" src={collapse}/>
+            <div className={"projects darkMode dropDownBottom"} id={this.state.id}>
+                <div className={"dropDownTop"} onClick={this.changeOverviewState}>
+                    <h3>
+                        {this.state.title}
+                    </h3>
+                    <img height="15px" src={collapse} />
                 </div>
 
                 <hr />
-                <img src={this.state.preview} height={this.state.scale[0]} width={this.state.scale[1]}></img>
-                <div id={this.state.id + "Desc"}>
-                    <p>{this.state.desc}</p>
+                <div >
+                    <img src={this.state.preview} height={this.state.scale[0]} width={this.state.scale[1]}></img>
+                    <div id={this.state.id + "Desc"}>
+                        <p>{this.state.desc}</p>
+                    </div>
+                    <br />
+                    <div> <a href={this.state.link}>Try the demo here!</a> </div>
                 </div>
-                <br />
-                <div> <a href={this.state.link}>Try the demo here!</a> </div>
-
             </div>);
     }
 }
