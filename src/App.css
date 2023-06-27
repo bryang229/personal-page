@@ -10,7 +10,7 @@ body{
 #navbar{
   display:flex;
   justify-content: space-between;
-  background-color:#0f7173; /* Nav color */
+  background-color:#E4DFDA; /* <light dark> #05204A; /*#0f7173; /* Nav color */
   align-items: center;
 }
 .navItem{
@@ -37,7 +37,7 @@ nav img:hover, a:hover{
 }
 
 .projects{
-  display: table;
+  display: inline-block;
   margin: 70px 30px 0px 70px;
   border: 1px black solid;
   border-radius: 5px;
@@ -100,7 +100,7 @@ nav img:hover, a:hover{
 }
 
 .dropDownTop{
-  background-color: #C83E4D;
+  background-color: #EE4D25;
   padding: 10px;
 }
 

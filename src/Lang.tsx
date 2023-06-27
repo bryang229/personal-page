@@ -62,6 +62,7 @@ class Lang extends React.Component<any, any>{
                 <br />
                 <ul>
                 {
+                    
                 this.state.usageArr.map((index: any) => {
                     if(this.state.iArr.indexOf(this.state.usageArr.indexOf(index)) == -1){
                         return <li key = {this.state.usageArr.indexOf(index)}>{index}</li>
@@ -70,7 +71,7 @@ class Lang extends React.Component<any, any>{
                         return (
                             <>
                                 <li key = {this.state.usageArr.indexOf(index)}>{index}</li>
-                                <a target="_blank" href={this.state.linksArr[this.state.usageArr.indexOf(index)]}> <div>Check it out here!</div></a>
+                                <a target="_blank" href={this.state.linksArr[this.state.iArr.indexOf(this.state.usageArr.indexOf(index))]}> <div>Check it out here!</div></a>
                             </>
                         )
                     }

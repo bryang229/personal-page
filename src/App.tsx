@@ -15,25 +15,29 @@ import './App.css';
 import React from 'react';
 
 let hpsDesc = `This is a Clock built during the HPS program under Google, using KICAD for creating the PCB's schema and then designing the PCB as well as exporting the footprints for production.\n
-This project was an amazing challenge, both in protyping designs and code using the Arduino, modules, and ICs such as the MAX7219 and the LCD module, but also in recreating these protypes in a schema.\n
+This project was an amazing challenge, both in prototyping designs and code using the Arduino, modules, and ICs such as the MAX7219 and the LCD module, but also in recreating these prototypes in a schema.\n
 The Clock has two 8x8 Displays for showing time and three different modes ! \n
 The Rotary Encoder allows for changing the date as well as changing the mode of the display.\n
 From Binary Seconds to Decimals Seconds as well as a compact Hours Minutes Seconds mode (all in Binary!)\n
 For More info please click the demo link!
 `
 let radarDesc = `An arduino project which draws the location of nearby objects on a LED screen. It uses 4 Ultrasonic sensors to 
-detect nearby objects. Orginally designed for an arduino car made from an Elegoo kit. Below is a demo of the radar built using P5.js.`;
-let mathDesc = `A webapp orginally built during the All Star Code SI of 2021, the React Math App uses TypeScript and React for the front end.`;
-let musicDesc = `An app using react for the front end and Java with the spring framework for the backend. It uses spotify's api to get information of songs based user input`;
+detect nearby objects. originally designed for an arduino car made from an Elegoo kit. Below is a demo of the radar built using P5.js.`;
+let mathDesc = `A webapp originally built during the All Star Code SI of 2021, the React Math App uses TypeScript and React for the front end.`;
+let musicDesc = `An app built using react for the front end and Java with the spring framework for the backend. It uses spotify's api to get information of songs based user input`;
+
+
 let bryanDesc = `Hello and welcome to my website, a little introduction of myself. I am a student at New York Institute of Technology studying Electrical 
 and Computer Engineering. I have been a part of various programs such as the Google Code Next, Google Team Edge, and All Star Code SI 2021. I've also been a Teaching Assistant for All Star Code SI 2022 under the NBA and Panasonic Cohorts as well as a Teaching Fellow for Emerging Leaders in Technology and Engineering (ELiTE)`;
+
+
 let pythonDesc = `I've Python for all sorts of stuff such as Math (numpy/sympy/pandas/matplot), AI through Vision AI and the raspberry PI Coral (for AI), Quantum computing (through IBM Qiskit) as well as for Full Stack Development (Flask, Boostrap etc...)`
-let javaDesc = `I've used Java for Backend Dev and for practing Data Structures`
+let javaDesc = `I've used Java for Backend Dev and for implementing different Data Structures`
 let jsDesc = `I've use JavaScript for various things but mostly Full Stack Dev. This website itself is built using TypeScript and React!`
 let cppDesc= `I've used C++ for various Projects (mostly Arduino/Microcontroller related). I've learned the basics of C++ such as operator overloading, dynamic pointer (and removing them no memory leaks :) )`
-let matlabDesc = `I've used MATLAB for a few small projects however I am more familar with the python library of MATLAB`
+let matlabDesc = `I've used MATLAB for a few small projects however I am more familiar with the python library of MATLAB`
 let kiCadDesc = `I've used KiCAD for creating my own Clock during the HPS program, going through ERC/DRC checks the whole time making sure my designs worked practically`;
-let excelDesc = `I've used Excel heavily for the past 3 years during my employement at ABC Truck Repairs as an Invoice Clerk!`;
+let excelDesc = `I've used Excel heavily for the past 3 years during my employment at ABC Truck Repairs as an Invoice Clerk!`;
 let lcDesc = `I've used LucidChar during my employment at Shepherd's Gate Academy creating their internal and external floor plans`;
 let adobeDesc = `I've used Adobe Premiere Pro during my employment at at Shepherd's Gate Academy creating their end of the year video`;
 let hdlDesc = `I've learned how to use and program in Verilog HDL to create and test circuits!`;
@@ -41,7 +45,7 @@ let kiCadUsage = [
     `Clock: I've used KiCad to create the schema and PCB of my own Clock. Using footprints and symbols provided by the program I was able to put together a beautiful clock Design! `
 ];
 let excelUsage = [
-    `ABC Truck Repairs Inc: Orginaized and Processed >1000 Invoices all in excel.`
+    `ABC Truck Repairs Inc: Organized and Processed >1000 Invoices all in excel.`
 ];
 let lcUsage = [
     `Floor Plans: Using LucidChart I created many floor plans for Shepherds Gate Academy, for both present and future reference!`
@@ -50,7 +54,7 @@ let adobeUsage = [
     `Video: Using Premiere Pro I created an end of the year video for Shepherds Gate Academy`
 ];
 let hdlUsage = [
-    `Verilog: Using Verligo HDL I've managed to create and test small circuits such as an 8 bit adder.`
+    `Verilog: Using Verilog HDL I've managed to create and test small circuits such as an 8 bit adder.`
 ];
 let jsUsage = [
     `Full Stack Dev: All demos linked on this website are either built using TypeScript & React or using p5.js for some animated demos.js`,
@@ -58,15 +62,15 @@ let jsUsage = [
     `Node: I've used express to create backend apps, my custom lesson for the All Star Code 22 SI was about using express to create a backend server`
 ]
 let cppUsage = [
-    `Arduino: I've used C++ for many Arduino and Microcontroller projects, mostyl recenty I've used it for the code of the Clock I created using KiCAD during the HPS Program, it's demo is on this page! I've also used it in my Radar project who's demo is also on this page.`,
+    `Arduino: I've used C++ for many Arduino and Microcontroller projects, mostly recently I've used it for the code of the Clock I created using KiCAD during the HPS Program, it's demo is on this page! I've also used it in my Radar project who's demo is also on this page.`,
     `Other uses: I've also play around with C++ creating various classes getting a feel for the language`
 ]
 let pythonUsage = [
-    `Math: I've use Python's various Math libraries before for solving various Calculus problems such as estimating various integrals through various methods (Simpsons Rule, Trapeziodal Rule). You can find it here `,
+    `Math: I've use Python's various Math libraries before for solving various Calculus problems such as estimating various integrals through various methods (Simpsons Rule, Trapezoidal Rule). You can find it here `,
     `AI: While a Teaching Fellow under ELiTE two Team Edge teams I mentored used AI in their python Full Stack Apps, this gave me the chance to experiment with my students!\n
     During this time I play around with Teachable Machines (Google) as well as Google Vision`,
     `Quantum: I've managed to create vary simple Quantum Circuits such as entangling circuits, I currently learning Linear Algebra and Modern Physics to better understand how these circuits work!`,
-    `Full-Stack Dev: While working with AI I also worked with Full Stack Dev with my students, teaching them how to use Flask to host a Full Stack App. I taught my students how to use Firetore as a database and pairing Flask with Bootstrap for a nice Front-End feel.\n
+    `Full-Stack Dev: While working with AI I also worked with Full Stack Dev with my students, teaching them how to use Flask to host a Full Stack App. I taught my students how to use Firestore as a database and pairing Flask with Bootstrap for a nice Front-End feel.\n
     See the Repo for my backend demo here!`
 ]
 let javaUsage = [
@@ -81,7 +85,7 @@ let matlabUsage = [
 ]
 
 let javaLinks = [
-    `https://docs.google.com/document/d/1jcGPFQRB4CmUg5WZgUOaYNGaPDJcJeItV54t3Qot0n4/edit?usp=sharing`
+    `https://docs.google.com/document/d/e/2PACX-1vRZE7U0ug5-1magKMOCA_a6cEqcZaPWSyq99R2kRua1qVrGAwsvpWI5QZnDyAabfkcMUqbA6pi4idl9/pub`
 ]
 
 let pythonLinks = [
@@ -97,7 +101,9 @@ const changeDisplayMode = (mode: boolean) => {
     // @ts-ignore
     for (let domObj of [...document.querySelectorAll(".darkMode"), ...document.querySelectorAll("a")]) {
         if (domObj.localName !== "a")
-            domObj.style.background = mode ? "#051923" : "#F4F3EE";
+            domObj.style.background = mode ? "#3D506F" : "#F4F3EE";
+        if (domObj.localName === "nav")
+            domObj.style.background = mode ? "#05204A" : "#E4DFDA";
         domObj.style.color = !mode ? "#051923" : "#F2F4F3";
     }
 }
@@ -117,7 +123,7 @@ const Navbar = () => {
     
     let darkMode = false;
     return (
-        <nav id={"navbar"}>
+        <nav id={"navbar"} className ={"darkMode"}>
 
 <div className="sideMenu" onClick={myFunction}>
   <div className="bar1"></div>
