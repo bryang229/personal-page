@@ -45,7 +45,7 @@ class Lang extends React.Component<any, any>{
                 </div>);
         }
         return (
-            <div className={"projects darkMode dropDownBottom"} id={this.state.id}>
+            <div className={"expanded darkMode dropDownBottom"} id={this.state.id}>
                 <div className = {"dropDownTop"}  onClick={this.changeOverviewState}>
                     <h3>
                     {this.state.title}

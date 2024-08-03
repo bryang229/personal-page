@@ -66,14 +66,7 @@ nav img:hover, a:hover{
   font-size: 20px;
 }
 
-#hardware{
-  width: 350px;
-}
 
-#hardwareDesc{
-  margin-left:25px;
-  width:300px;
-}
 
 #bryanDiv {
   margin-bottom:10%;
@@ -89,6 +82,29 @@ nav img:hover, a:hover{
  border: 1px solid black;
  border-radius: 5px;
 
+}
+
+.expanded {
+  width: 60%;
+  width: 80%;
+  display: inline-block;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+
+
+#internships{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.internships{
+  display: inline-block;
+  border: 1px black solid;
+  border-radius: 5px;
+  width: 350px;
 }
 
 .bar1, .bar2, .bar3 {
