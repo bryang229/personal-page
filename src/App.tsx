@@ -34,7 +34,7 @@ gate set, or even coupling type (heavy-hex, hexagonal, fully coupled, etc.). The
 to generate the previously stated properties, either to alter an existing ("parent") backend or to create a new
 one for testing.`
 
-let ibmqSkills = ["Quantum Computer Principles", "Quantum Computing Transpiling", "Operation reduction", "Coupling Reduction", "Clifford operators", "Quantum Computing Compiler", "Qiskit", "Quantum Error Correcting Methods (topological and software)", "Coupling topologies (Heavy-Hex, Hexed, Square, Fully connected"];
+let ibmqSkills = ["Quantum Computer Principles", "Quantum Computing Transpiling", "Operation reduction", "Coupling Reduction", "Clifford operators", "Quantum Computing Compiler", "Qiskit", "Quantum Error Correcting Methods (topological and software)", "Coupling topologies (Heavy-Hex, Hexagonal, Square, Fully connected"];
 
 let gedesc = `While at GE I worked on various project, these projects include root cause investigations (for non conforming units),  engineering changes, cost reducing research and supporting the operators as needed.\n`
 
@@ -72,7 +72,7 @@ let bryanDesc = `Hello and welcome to my website, a little introduction of mysel
 Institute of Technology studying Electrical and Computer Engineering. I have been a STEM instructor in various
 places such as All Star Code, Emerging Leaders in Technology and Engineer (ELiTE) and LAUNCH. I have also been 
 apart of various programs such as Google Code Next, All Star Code and Google Hardware Product Sprint. I've been
-to develop many software and electrical engineering skills at my previous two internships as a Quantum Software 
+able to develop many software and electrical engineering skills at my previous two internships as a Quantum Software 
 Engineer Intern at IBM Research and a Sustaining and Test Engineer Intern at GE Aerospace.`;
 
 
